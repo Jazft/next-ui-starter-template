@@ -2,10 +2,8 @@
 
 import React from "react";
 import { Container, Text, Row, Button, Input, Spacer } from '@nextui-org/react';
-import { VariantsSelectorWrapper } from "@/components/VariantSelectorWrapper";
 import { Poppins } from 'next/font/google'
 import Bold from '#componentsBold'
-import { UserIcon } from "./UserIcon";
 
 const lt = Poppins({
     subsets: ['latin'],
