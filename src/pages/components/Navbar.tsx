@@ -4,8 +4,6 @@ import React from "react";
 import { Container, Text, Row, Button, Input, Spacer } from '@nextui-org/react';
 import { Poppins } from 'next/font/google'
 import Bold from '#componentsBold'
-import { UnLockIcon } from "./UnlockIcon";
-import { LockIcon } from "./LockIcon";
 
 const lt = Poppins({
     subsets: ['latin'],
