@@ -103,3 +103,7 @@ a {
 .placeholder {
   color: #eee !important;
 }
+
+#loginTitle b {
+  color: #7542f5;
+}
