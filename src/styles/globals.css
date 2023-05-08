@@ -90,9 +90,9 @@ body {
 }
 
 body {
-  background-color: #000;
+  background-color: #eee;
   min-height: 100vh;
-  color: #eee;
+  color: #000;
 }
 
 a {
@@ -100,10 +100,6 @@ a {
   text-decoration: none;
 }
 
-.placeholder {
-  color: #eee !important;
-}
-
-#loginTitle b {
-  color: #7542f5;
+b  {
+  color: #000 !important;
 }
