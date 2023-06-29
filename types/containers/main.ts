@@ -1,5 +1,5 @@
 const styles = {
-  p: ' 2rem',
+  minHeight: '100vh',
 };
 
 export const externalStyles = {
