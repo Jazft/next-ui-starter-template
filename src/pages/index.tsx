@@ -1,23 +1,20 @@
-// ===== General Exports ==== //
+// ===== General Exports | File: index.tsx ==== //
 
-import React, { useState } from "react";
+import React from "react";
+import PageLayout from "@/layouts/Layout";
 import { Text, Container } from "@nextui-org/react";
-import { Poppins } from 'next/font/google'
+import { externalStyles } from "@/types/containers/main";
 
-const pp = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '400', '600'],
-  display: 'swap',
-});
-
-// ===== Function Index() ==== //ap
+// ===== Function Home() ==== //ap
 
 export default function Home() {
   return (
     <>
-     <Container css={{ p: '$10 $14' }}>
-        <Text className={pp.className}> <b>NextUI + NextJS:</b> Loaded</Text>
-     </Container>
+      <PageLayout>
+        <Container  {...externalStyles}>
+          <Text h3 weight={'normal'}> 😎 Welcome to your <b>NextUI</b> Template! 🎉</Text>
+        </Container>
+      </PageLayout>
     </>
   );
 }

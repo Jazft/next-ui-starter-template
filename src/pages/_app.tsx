@@ -1,36 +1,33 @@
 // ===== General Imports | File: _app.js ==== //
 
-import Head from 'next/head'
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { AppProps } from 'next/app';
-import { NextUIProvider } from "@nextui-org/react";
-import "@/styles/globals.css";
+import { NextUIProvider, createTheme } from "@nextui-org/react";
+import "@/src/styles/globals.css";
+import { fontPoppins } from '@/config/mainFonts';
+
+const appTheme = createTheme({
+  type: "light",
+  theme: {
+    colors: {},
+    fonts: {},
+    space: {},
+  }
+})
 
 // ===== App: MyApp ==== //
 
-
 function MyApp({ Component, pageProps }: AppProps) {
-
-  // ====== Loader Code ===== //
-
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-  //   window.addEventListener('load', () => {
-  //     setLoading(false);
-  //   });
-  // }, []);
-
-  // ====== Loader Code End  ===== //
-
   return (
-    <NextUIProvider>
-          <Head>
-            <title>NextUI ⎯ Loaded</title>
-          </Head>
-          {/* {loading && <loader />} */}
+    <NextUIProvider theme={appTheme}>
+        <style jsx global>{`
+        :root {
+          ---nextui-font-poppins: ${fontPoppins.style.fontFamily};
+        }
+      `}</style>
          <Component  {...pageProps} />
     </NextUIProvider>
   );
 }
 export default MyApp;
+
