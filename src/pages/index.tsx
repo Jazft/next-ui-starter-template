@@ -12,7 +12,7 @@ export default function Home() {
      minHeight: '100vh',
      flexDirection: 'column',
      textAlign: 'center !important',
-     gap: '$4'
+     gap: '$4' 
   }
   return (
     <>
