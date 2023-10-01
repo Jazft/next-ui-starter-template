@@ -1,7 +1,7 @@
 
 #  Next.js + NextUI V1 Starter Template 🚀
 ## 🚨 Note: This template is based on [NextUI V1](https://v1.nextui.org/) Documentation.
-### ⚠ NextUI V2 starter based in TailwindCSS is avaliable.
+### ⚠ NextUI V2 starter based in TailwindCSS is avaliable in the next [repository](https://github.com/Vilictus/nextui-v2-starter-template).
 
 -----------------------------------------------
 
