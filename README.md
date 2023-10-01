@@ -1,8 +1,7 @@
 
 #  Next.js + NextUI V1 Starter Template 🚀
 ## 🚨 Note: This template is based on [NextUI V1](https://v1.nextui.org/) Documentation.
-
-# ⚠ NextUI V2 starter template based in TailwindCSS is avaliable.
+### ⚠ NextUI V2 starter based in TailwindCSS is avaliable.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/Vilictus/next-ui-starter-template) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Vilictus/next-ui-starter-template)
 
