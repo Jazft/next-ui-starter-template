@@ -2,29 +2,45 @@
 
 import React from "react";
 import PageLayout from "@/layouts/Layout";
-import { Text, Container, Grid, textWeights, Link, Button, Row } from "@nextui-org/react";
+import { Text, Container, Grid, textWeights, Link, Button, Row, Image } from "@nextui-org/react";
 import { siteConfig } from "@/config/siteMeta";
 
-// ===== Function Home() ==== //ap
+// ===== Function Home() ==== //
 
 export default function Home() {
-  const styles =  {
-     minHeight: '100vh',
-     flexDirection: 'column',
-     textAlign: 'center !important',
-     gap: '$4' 
-  }
+  const containerStyles = {
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    padding: '2rem',
+  };
+
+  const imageStyles = {
+    width: '200px',
+    borderRadius: '50%',
+    marginBottom: '1rem',
+  };
+
   return (
-    <>
-      <PageLayout title="NextUI + Next.js">
-
-        <Row align="center" justify="center" css={styles}>
-            <Text h3> Welcome to your <b>NextUI</b> Template! 🎉</Text>
-            <Text h5 weight={'normal'}> Start editing <b>index.tsx</b> or <b>_app.tsx</b> to customize your app.</Text>
-            <Link href={siteConfig.repo} css={{ marginTop: '$5' }}><Button>Github</Button></Link>
-        </Row>
-
-      </PageLayout>
-    </>
+    <PageLayout title="NextUI + Next.js">
+      <Container css={containerStyles}>
+        <Image
+          src="/path/to/your/image.jpg"
+          alt="Your Logo"
+          style={imageStyles}
+        />
+        <Text h3>Welcome to your NextUI Template! 🎉</Text>
+        <Text p>
+          Start editing <b>index.tsx</b> or <b>_app.tsx</b> to customize your app.
+        </Text>
+        <Link href={siteConfig.repo} style={{ marginTop: '1.5rem' }}>
+          <Button>Github</Button>
+        </Link>
+      </Container>
+    </PageLayout>
   );
 }
+
